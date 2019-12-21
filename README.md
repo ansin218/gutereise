@@ -1,2 +1,3 @@
-# gutereise
-Track flight prices between Munich and major Indian cities
+# Gute Reise
+
+Track flight prices between Munich and Chennai, Mumbai, Delhi, Kolkata and Bengaluru.
