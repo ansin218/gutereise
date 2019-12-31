@@ -57,6 +57,7 @@ for to_city_code in indian_cities_code:
         df.sort_values('ticket_price', ascending = True, inplace = True)
         df = df.drop_duplicates('airline_code', keep = 'first')
         
+        df = df[df['airline_code'] != '9B']
         df['airline_name'] = df['airline_code'].map({'BA': 'British Airways', 'LH': 'Lufthansa', 'WY': 'Oman Air', 
                                               'EK': 'Emirates', 'EY': 'Etihad', 'TK': 'Turkish Airlines',
                                               'KL': 'KLM Royal Dutch Airlines', 'AZ': 'Alitalia',
@@ -65,7 +66,9 @@ for to_city_code in indian_cities_code:
                                               'TG': 'Thai Airways', 'AY': 'Finn Air', 'SU': 'Aeroflot',
                                               'LO': 'LOT Polish Airlines', 'UL': 'Sri Lankan Airlines',
                                               'OS': 'Austrian Airlines', 'CX': 'Cathay Pacific', 
-                                              'AI': 'Air India'})
+                                              'AI': 'Air India', 'KU': 'Kuwait Airways', 'MS': 'Egypt Air',
+                                              'PS': 'Ukraine International Airlines', 'SV': 'Saudia',
+                                              'MU': 'China Eastern Airlines', 'NH': 'All Nippon Airways'})
         df['from_city'] = 'MUC'
         df['to_city'] = to_city_code
         df['from_date'] = from_date

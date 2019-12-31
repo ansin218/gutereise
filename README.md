@@ -1,7 +1,5 @@
 # Gute Reise
 
-Track flight prices between Munich and Chennai, Mumbai, Delhi, Kolkata and Bengaluru.
-
 * Tracks prices between Munich (MUC) and Chennai (MAA), Mumbai (BOM), Delhi (DEL), Kolkata (CCU) and Bengaluru (BLR) for all available operating airlines.
 * Tracks flights every day with departure day being 1, 7, 15, 30, 60 and 90 days after current day.
 * Tracks return flights with 20 days window between departure date and return date.
