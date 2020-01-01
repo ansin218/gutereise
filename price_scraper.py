@@ -68,7 +68,8 @@ for to_city_code in indian_cities_code:
                                               'OS': 'Austrian Airlines', 'CX': 'Cathay Pacific', 
                                               'AI': 'Air India', 'KU': 'Kuwait Airways', 'MS': 'Egypt Air',
                                               'PS': 'Ukraine International Airlines', 'SV': 'Saudia',
-                                              'MU': 'China Eastern Airlines', 'NH': 'All Nippon Airways'})
+                                              'MU': 'China Eastern Airlines', 'NH': 'All Nippon Airways',
+                                              'CA': 'Air China'})
         df['from_city'] = 'MUC'
         df['to_city'] = to_city_code
         df['from_date'] = from_date
