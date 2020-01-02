@@ -1,6 +1,7 @@
 from amadeus import Client
 import pandas as pd
 import datetime as dt
+import glob
 
 api_file = open('API_KEY.txt', 'r')
 api_credentials = api_file.read()
@@ -79,3 +80,13 @@ for to_city_code in indian_cities_code:
         
 export_file_name = 'dataset/_' + str(today_date) + '_muc_in.csv'
 finalDf.to_csv(export_file_name, index = False)
+
+list_of_files = glob.glob('dataset/*')
+
+bigDf = pd.DataFrame()
+
+for i in list_of_files:
+    smallDf = pd.read_csv(i)
+    bigDf = bigDf.append(smallDf)
+    
+bigDf.to_csv('final_data/_raw_dataset.csv', index = False)
