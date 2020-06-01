@@ -9,7 +9,7 @@
 * Clone or download this directory.
 * Sign up for the API here: https://developers.amadeus.com/
 * Create a file API_KEY.txt to enter the `client_id` and `client_secret` in one single seperate by single space character.
-* Run the `price_scraper.py` file.
+* Run the `price_scraper_v2.py` file.
 * Data grabbed can be found inside `data` folder in xlsx format.
 
 ## Disclaimer
