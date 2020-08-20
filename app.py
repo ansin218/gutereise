@@ -43,12 +43,11 @@ app.layout = html.Div(
                     html.Div(className='four columns div-user-controls',
                              children=[
                                  html.H1('Gute Reise'),
-                                 html.H5('Historical flight prices between Munich and Chennai, Kolkata, Mumbai, Delhi and Bengaluru'),
+                                 html.H4('Historical flight prices between Munich and Chennai, Kolkata, Mumbai, Delhi and Bengaluru'),
                                  html.Div(
                                      className='div-for-dropdown',
                                      children=[
-                                         dcc.Dropdown(id='stockselector', options=get_options(df['airline_name'].unique()),
-                                                      multi=True, value=[df['airline_name'].unique()[0]],
+                                         dcc.RadioItems(id='stockselector', options=get_options(df['airline_name'].unique()),
                                                       style={'backgroundColor': '#1E1E1E'},
                                                       className='stockselector'
                                                       ),
